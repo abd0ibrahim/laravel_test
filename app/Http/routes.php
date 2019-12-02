@@ -276,11 +276,15 @@ Route::get('/post/{id}/user', function ($id) {
 
 Route::get('/posts', function () {
 
+//    $posts = Post::all();
+//
+//    foreach ($posts as $post){
+//        echo $post->title . "</br>";
+//    }
+
     $posts = Post::all();
 
-    foreach ($posts as $post){
-        echo $post->title . "</br>";
-    }
+    return view('posts.index', compact('posts'));
 
 //    return $posts;
 //    foreach ($user->posts as $post) {
