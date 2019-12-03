@@ -38,6 +38,8 @@ Route::get('/about', function () {
 
 Route::get('/post/{id}', 'PostController@index');
 
+Route::get('/posts', 'PostController@index');
+
 ///////////////
 
 Route::get('/post/{id}/{name}/{pass}', 'PostController@show_post');
@@ -139,9 +141,9 @@ Route::get('/read', function () {
 });
 
 
-Route::group(['middleware' => ['web']], function () {
-
-});
+//Route::group(['middleware' => ['web']], function () {
+//
+//});
 
 Route::get('/find/{id}', function ($id) {
 

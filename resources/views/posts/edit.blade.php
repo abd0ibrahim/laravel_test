@@ -5,11 +5,9 @@
 
     <h1>Edit Post</h1>
 
-    <form method="post" action="/cms/public/posts/{{$post->id}}">
+    <form method="post" action="/cms/public/posts/4">
 
-        {{csrf_field()}}
-
-        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        {!! csrf_field() !!}
 
         <input type="hidden" name="_method" value="PUT">
 
@@ -18,7 +16,6 @@
         <input type="submit" name="submit">
 
     </form>
-
 
 
 
