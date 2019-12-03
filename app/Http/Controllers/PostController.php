@@ -92,7 +92,8 @@ class PostController extends Controller
 
         $posts->update($request->all());
 
-        return view('posts.index', compact('posts'));
+        return redirect('/posts');
+
     }
 
     /**

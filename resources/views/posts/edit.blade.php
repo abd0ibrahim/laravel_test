@@ -5,7 +5,7 @@
 
     <h1>Edit Post</h1>
 
-    <form method="post" action="/cms/public/posts/4">
+    <form method="post" action="/cms/public/posts/{{$post->id}}">
 
         {!! csrf_field() !!}
 

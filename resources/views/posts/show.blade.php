@@ -6,9 +6,9 @@
     <ul>
 
         <h3>{{$post->title}}</h3>
-        @foreach($posts as $post)
+        @foreach($post as $singlePost)
 
-            <li><a href="{{route('posts.show', $posts->id)}}">{{$posts->title}}</a></li>
+            <li><a href="{{route('posts.show', $singlePost->title)}}">{{$singlePost->title}}</a></li>
 
         @endforeach
 
